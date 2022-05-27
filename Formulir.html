@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Felicia William - Formulir</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+		<link rel="stylesheet" type="text/css" href="box_style.css">
+	<body>
+	
+		<div class=MainBoxPortofolio>	
+			<div class=TextBoxPortofolio>
+			<form action="Hasil_simpan_formulir.php" method="post" name="myform">
+				<table border=0 width="400" cellspacing="0" cellpadding=10 align=left>
+				
+					<tr>
+						<td><label for="nama">Nama </label></td>	
+						<td><input type="text" name="nm" size="25"></td>
+					</tr>
+						
+					<tr>
+						<td><label for="thn_lhr">Tahun Kelahiran</label></td>
+						<td>
+							<select name="thn">
+							<option value="sebelum 1961"><1961</option>
+							<option value="antara 1961-1970">1961-1970</option>
+							<option value="antara 1971-1980<">1971-1980</option>
+							<option value="antara 1981-1990">1981-1990</option>
+							<option value="antara 1991-2000">1991-2000</option>
+							<option value="antara 2001-2010">2001-2010</option>
+						</td>
+					</tr>
+							  
+					<tr>
+						<td><label for="jns_klmn">Jenis Kelamin</label></td>
+						<td><label><input type="radio" name="jk" value="Laki-laki" checked="" /> Laki-laki</label>
+						<label><input type="radio" name="jk" value="Perempuan" /> Perempuan</label></td>
+					</tr> 
+							
+					<tr>
+						<td><label for="sts_krj">Status Pekerjaan</label></td>
+						<td>
+							<label><input type="checkbox" name="krj" value="Pelajar / Belum Bekerja" checked="" /> Pelajar / Belum Bekerja</label></br>
+							<label><input type="checkbox" name="krj" value="Sudah Bekerja" /> Sudah Bekerja</label>
+						</td>
+					</tr> 	
+
+					<tr>
+						<td><label for="pesan">Pesan</label></td>
+						<td><textarea name="psn" id="psn"></textarea></td> 
+					</tr>
+					
+					<tr>
+						<td><input type="submit" value="Konfirmasi" name="knfrms"></td>
+					</tr>
+				
+				</table>
+			</form>		
+			</div>
+		</div>
+		
+		<div class=MainBox>
+			<p><a href="Index.html"><font color="white">Kembali ke beranda.</font></a></p>
+		</div>
+		
+		<div class=MainBox>
+			<p>Copyright © 2020 Felicia William.</p>
+		</div>
+		
+	</body>
+</html>

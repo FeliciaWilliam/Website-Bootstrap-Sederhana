@@ -1,0 +1,228 @@
+body
+		{
+			background:url("lake.png");
+			background-repeat:no-repeat;
+			background-size:cover;
+			background-attachment:fixed;
+		}
+.MainBox
+		{
+			background-color:#364e4e;
+			opacity:0.9;
+			color:white; 
+			padding:10px;
+			float:center;
+			width:20vh 50vw 0vh 50vw; 
+			margin:3vh 5vw 3vh 5vw; 
+			font-family:Verdana;
+			border-radius:20px;
+			display:flex;
+			flex-direction:row;
+		}
+		
+.MainBoxPortofolio
+		{
+			background-color:#364e4e;
+			opacity:0.9;
+			color:white; 
+			padding:10px;
+			float:center;
+			width:20vh 50vw 0vh 50vw; 
+			margin:3vh 5vw 3vh 5vw; 
+			font-family:Verdana;
+			border-radius:20px;		
+			vertical-align:center;
+			display:flex;
+			flex-direction:column;
+		}
+		
+.TextBoxIndex
+		{
+			background-color:#123849;
+			opacity:1.0;
+			color:white;
+			padding:20px;
+			border-radius:20px;
+			margin:30px 30px 30px 30px;
+			font-family:Verdana;
+			font-size:36;
+			justify-content: center;
+			align-items: center;			
+			display: inline-block;
+			vertical-align:center;
+		}		
+		
+.TextBoxLeft
+		{
+			background-color:#123849;
+			opacity:1.0;
+			color:white;
+			padding:20px;
+			border-radius:20px;
+			margin:30px 30px 30px 30px;
+			font-family:Verdana;
+			justify-content: center;
+			align-items: center;				
+		}
+		
+.TextBoxRight
+		{
+			background-color:#123849;
+			opacity:1.0;
+			color:white;
+			padding:20px;
+			border-radius:20px;
+			margin:30px 30px 30px 30px;
+			font-family:Verdana;	
+			display:flex;
+			flex-direction:column;
+		}
+		
+.TextBoxPortofolio
+		{
+			background-color:#123849;
+			opacity:1.0;
+			color:white;
+			padding:20px;
+			border-radius:20px;
+			margin:30px 30px 30px 30px;
+			font-family:Verdana;	
+			display:flex;
+			flex-direction:column;
+		}
+		
+.BoxStripeWhite
+		{
+			background-color:#ffffff;
+			opacity:1.0;
+			color:#123849;
+			padding:0px 10px 0px 10px;
+			margin:5px 5px 5px 5px;
+			border-radius:20px;
+			font-family:Verdana;
+			display:flex;
+			flex-direction:column;	
+		}	
+
+.BoxStripeGreen
+		{
+			background-color:#364e4e;
+			opacity:1.0;
+			color::#ffffff;
+			padding:0px 10px 0px 10px;
+			margin:5px 5px 5px 5px;
+			border-radius:20px;
+			font-family:Verdana;
+			display:flex;
+			flex-direction:column;	
+		}			
+		
+.ProfilePicture
+		{
+			border-radius:50%;
+		}
+		
+.GridCOntainer
+		{
+			display:grid;
+			grid-gap:10px;
+		}		
+		
+.Container
+		{
+			position: relative;
+			width:200px;
+		}
+		
+.Art
+		{
+			position: relative;
+			display: block;
+		}
+
+.Overlay 
+		{
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			height:200 px;
+			width: 200 px;
+			opacity: 0;
+			transition: 1s ease;
+			background-color::#364e4e;
+		}		
+		
+.ArtText 
+		{
+			color: white;
+			font-size: 20px;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			-webkit-transform: translate(-50%, -50%);
+			-ms-transform: translate(-50%, -50%);
+			transform: translate(-50%, -50%);
+			text-align: center;
+		}
+		
+.Container:hover .Overlay 
+		{
+			opacity: 1;
+		}
+		
+.Gallery_row
+		{
+			display:flex;
+			flex-wrap:wrap;
+			padding:0px 4px;
+		}
+		
+/*Untuk 3 (atau lebih) kolom*/
+.Gallery_col
+		{
+			flex:25%;
+			max-width:25%;
+			padding:0px 4px;
+		}
+		
+.Gallery_col img
+		{
+		  margin-top: 8px;
+		  margin-left: 8px;
+		  margin-right: 8px;
+		  vertical-align: middle;
+		  width: 100%;
+		}		
+		
+/*Responsive layout - supaya galeri hanya menjadi 2 kolom*/
+@media screen and (max-width: 800px) {
+  .Gallery_col	
+		{
+			flex: 50%;
+			max-width: 50%;
+			
+		}
+	
+	.TextBoxIndex
+		{
+			flex: 25%;
+			max-width: 25%;
+		}					
+}
+
+/*Responsive layout - supaya galeri hanya menjadi 1 kolom*/
+@media screen and (max-width: 600px) {
+  .Gallery_col	{
+					flex: 100%;
+					max-width: 100%;
+				}
+				
+	.TextBoxIndex
+				{
+					flex: 100%;
+					flex-direction:row;
+					max-width: 100%;
+				}				
+}
